@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home page</title>
+  </head>
+  <body>
+    <h1>Model Prediction</h1>
+
+    <form action="{% urls 'result' %}">
+      {% csrf_token %}
+      <p>Picture Class:</p>
+      <!--This was originally text, should be image-->
+      <input type="text" name="pclass"> 
+      <!--How do I pull the image????-->
+      <br>
+      <input type="submit" value='Get Predictions'>
+    </form>
+  </body>
+</html>
